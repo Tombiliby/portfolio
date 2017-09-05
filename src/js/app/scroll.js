@@ -100,7 +100,29 @@ $("#sideBar_2").stick_in_parent();
     }, 250));
 
 
-    console.log($(window).height());
-    $("#sideBar_1").height($(window).height());
+
+    // resize desc tag for desc at bottom
+    $(".sideBar_height").each(function() {
+    	$(this).height($(window).height());
+    });
+
+    // BG by section
+  	$(window).scroll(function() {
+  		$(".scn_illustration").each(function() {
+  			var posStart = $(this).offset().top - $(window).scrollTop(),
+  					posActive = posStart + $(this).height();
+  			//console.log($(this).data("bgcolor"));
+  			console.log(posStart);
+  			console.log(posActive);
+
+  			if(posActive > posStart > 0) {
+  				//console.log($(this));
+  			}
+
+  		});
+  	});
+
+
+
 
 })(window.jQuery);
