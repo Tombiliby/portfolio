@@ -8,7 +8,7 @@
     <title><%= @document.title %></title>
 
 		<!-- Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Montserrat:700|Open+Sans:400,400i,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Montserrat:100,700|Open+Sans:400,400i,700" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>

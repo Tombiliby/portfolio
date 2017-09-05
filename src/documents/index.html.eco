@@ -4,10 +4,12 @@ layout: "default"
 ---
 
 <h1 class="hidden"><%= @document.title %></h1>
-
-<%- @readFile('sections/demo_section_1.html') %>
-<%- @readFile('sections/demo_section_2.html') %>
-
+<div class="bgColor" style="background-color:blue"></div>
+<div class="container">
+	<%- @readFile('sections/demo_section_1.html') %>
+	<%- @readFile('sections/scn_carrefourApp.html') %>
+	<%- @readFile('sections/demo_section_2.html') %>
+</div>
 
 </div>
 

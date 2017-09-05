@@ -21,9 +21,6 @@ $(function () {
 });
 */
 
-
-$("#sideBar_2").stick_in_parent();
-
 (function() {
 
     'use strict';
@@ -102,7 +99,7 @@ $("#sideBar_2").stick_in_parent();
 
 
     // resize desc tag for desc at bottom
-    $(".sideBar_height").each(function() {
+    $(".inner_fullHeight").each(function() {
     	$(this).height($(window).height());
     });
 
