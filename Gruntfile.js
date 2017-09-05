@@ -36,7 +36,8 @@ module.exports = function(grunt) {
 					"<%= pathOrx.tsSalesprocess %>/js/lib/jquery.js",
 					"<%= pathOrx.tsSalesprocess %>/js/lib/bootstrap.js",
 					"<%= pathOrx.tsSalesprocess %>/js/lib/ScrollMagic.js",
-					"<%= pathOrx.tsSalesprocess %>/js/lib/debug.addIndicators.min.js"
+					"<%= pathOrx.tsSalesprocess %>/js/lib/debug.addIndicators.min.js",
+					"<%= pathOrx.tsSalesprocess %>/js/lib/jquery.sticky-kit.js"
 				],
 				dest: "<%= pathOrx.csSalesprocess %>/js/lib.js"
 			},

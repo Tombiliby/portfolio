@@ -1,0 +1,14 @@
+---
+title: "Process Tabs"
+layout: "default"
+---
+
+<h1 class="hidden"><%= @document.title %></h1>
+
+<%- @readFile('sections/demo_section_1.html') %>
+<%- @readFile('sections/demo_section_2.html') %>
+
+
+</div>
+
+

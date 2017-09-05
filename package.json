@@ -4,6 +4,7 @@
   "description": "New DocPad project without using a skeleton",
   "dependencies": {
     "docpad": "~6.79.4",
+    "docpad-plugin-combiner": "^2.0.8",
     "docpad-plugin-eco": "~2.2.1",
     "grunt": "~0.4.5",
     "grunt-contrib-concat": "~0.5.1",
