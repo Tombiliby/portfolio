@@ -7,8 +7,10 @@ layout: "default"
 <div class="bgColor" style="background-color:blue"></div>
 <div class="container">
 	<%- @readFile('sections/demo_section_1.html') %>
-	<%- @readFile('sections/scn_carrefourApp.html') %>
+	<%- @readFile('sections/scn_demo.html') %>
 	<%- @readFile('sections/demo_section_2.html') %>
+	<%- @readFile('sections/scn_carrefourApp.html') %>
+	<%- @readFile('sections/demo_section_1.html') %>
 </div>
 
 </div>
