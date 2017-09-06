@@ -1,14 +1,15 @@
-.iPhoneConf(@iPhoneColor: "black", @widthScreen: 200px, @heightScreen: round((@widthScreen * 1.84466019))) {
-	.iPhone {
+// 2630
+.iPadConf(@iPhoneColor: "black", @widthScreen: 300px, @heightScreen: round((@widthScreen * 1.44505495))) {
+	.iPad {
 		width: @widthScreen;
 		height: @heightScreen;
-		background-image: url("../iPhone_@{iPhoneColor}.png");
+		background-image: url("../iPad_@{iPhoneColor}.png");
 	}
 }
 // Default size iPhone
-.iPhoneConf();
+.iPadConf();
 
-.iPhone {
+.iPad {
   background-size: cover;
   background-repeat: no-repeat;
 	position: relative;
@@ -16,10 +17,10 @@
 	.screen {
 		background: #1f1e1f;
 		position: absolute;
-		top: 13.1%;
-		right: 14.5%;
-		bottom: 17%;
-		left: 13.1%;
+		top: 9.755%;
+		right: 7.9%;
+		bottom: 12.4%;
+		left: 7.9%;
 		overflow-y: auto;
 		overflow-x: hidden;
     -ms-overflow-style: none;  // IE 10+
