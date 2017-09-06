@@ -3,9 +3,12 @@
 @import "../bootstrap/mixins.less";
 
 // Components
+@import "bgColor.less";
 @import "iPhone.less";
 @import "iPad.less";
 @import "macbook.less";
+@import "owl.less";
+@import "screenList.less";
 
 /* FONT */
 h2, .h2 {
@@ -15,17 +18,37 @@ h3, .h3 {
 	font-weight: 100;
 	text-transform: uppercase;
 }
+h4, .h4 {
+	text-transform: uppercase;
+}
 
-.bgColor {
-	position: fixed;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	left: 40%;
+.responsiveScreenZone {
+	position: relative;
+	height: 400px;
+  overflow: hidden;
+	.iPhoneConf("black", 70px);
+	.iPadConf("black", 170px);
+	.macbookConf(400px);
+	.iPad, .iPhone, .macbook {
+		position: absolute;
+		bottom: 0;
+	}
+	.iPhone {
+		left: 20%;
+		z-index: 1;
+	}
+	.iPad {
+		bottom: 15px;
+		left: 24%;
+	}
+	.macbook {
+		left: 35%;
+	}
 }
 
 .scn_illustration {
 	padding-top: 70px;
+	padding: 70px 0 0 0;
 }
 
 .side_summary {
