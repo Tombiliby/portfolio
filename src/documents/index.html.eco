@@ -4,9 +4,10 @@ layout: "default"
 ---
 
 <h1 class="hidden"><%= @document.title %></h1>
-<div class="bgColor" style="background-color:blue"></div>
-<div class="container">
+<div class="bgColor" style="background-color:#3776b4"></div>
+<div class="container-fluid">
 	<%- @readFile('sections/demo_section_1.html') %>
+	<%- @readFile('sections/demo_section_2.html') %>
 	<%- @readFile('sections/scn_demo.html') %>
 	<%- @readFile('sections/demo_section_2.html') %>
 	<%- @readFile('sections/scn_carrefourApp.html') %>

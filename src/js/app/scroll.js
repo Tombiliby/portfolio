@@ -96,8 +96,6 @@ $(function () {
         }
     }, 250));
 
-
-
     // resize desc tag for desc at bottom
     $(".inner_fullHeight").each(function() {
     	$(this).height($(window).height());
@@ -105,15 +103,24 @@ $(function () {
 
     // BG by section
   	$(window).scroll(function() {
-  		$(".scn_illustration").each(function() {
+  		$(".sectionZone").each(function() {
   			var posStart = $(this).offset().top - $(window).scrollTop(),
   					posActive = posStart + $(this).height();
   			//console.log($(this).data("bgcolor"));
-  			console.log(posStart);
-  			console.log(posActive);
+  			console.log($(this) + "Pos Start :" + posStart);
+  			console.log($(this) + "Pos Active" + posActive);
 
-  			if(posActive > posStart > 0) {
-  				//console.log($(this));
+  			console.log(posStart >= 0);
+  			console.log(posStart + " >= 0 && " + posStart +"<="+ posActive);
+
+/*
+	Pos Start :0
+	app.js:89 Pos Active4430
+*/
+
+  			if(posStart <= posActive && posStart >= 0) {
+  				console.log("ACTIVE" + $(this));
+  				$(".bgColor").css("background", $(this).data("bgcolor"))
   			}
 
   		});
