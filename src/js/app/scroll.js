@@ -104,23 +104,11 @@ $(function () {
     // BG by section
   	$(window).scroll(function() {
   		$(".sectionZone").each(function() {
-  			var posStart = $(this).offset().top - $(window).scrollTop(),
-  					posActive = posStart + $(this).height();
-  			//console.log($(this).data("bgcolor"));
-  			console.log($(this) + "Pos Start :" + posStart);
-  			console.log($(this) + "Pos Active" + posActive);
+  			var bottomSection = $(this).height() + $(this).offset().top;
 
-  			console.log(posStart >= 0);
-  			console.log(posStart + " >= 0 && " + posStart +"<="+ posActive);
-
-/*
-	Pos Start :0
-	app.js:89 Pos Active4430
-*/
-
-  			if(posStart <= posActive && posStart >= 0) {
-  				console.log("ACTIVE" + $(this));
-  				$(".bgColor").css("background", $(this).data("bgcolor"))
+  			if($(window).scrollTop() > $(this).offset().top && $(window).scrollTop() < bottomSection) {
+  				console.log(this);
+  				$(".bgColor").css("background", $(this).data("bgcolor"));
   			}
 
   		});
