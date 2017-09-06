@@ -1,0 +1,36 @@
+// 570px
+.macbookConf(@widthScreen: 300px, @heightScreen: round((@widthScreen * 0.56435644))) {
+	.macbook {
+		width: @widthScreen;
+		height: @heightScreen;
+	}
+}
+// Default size macbook
+.macbookConf();
+
+.macbook {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../macbook.png");
+	position: relative;
+	margin: 30px auto;
+	.screen {
+		background: #1f1e1f;
+		position: absolute;
+		top: 8.1%;
+		right: 14.4%;
+		bottom: 13.1%;
+		left: 14.4%;
+		overflow-y: auto;
+		overflow-x: hidden;
+    -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+    &::-webkit-scrollbar {
+    	display: none;
+    }
+		text-align: center;
+		img {
+			width: 100%;
+		}
+	}
+}
