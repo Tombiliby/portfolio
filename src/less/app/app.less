@@ -11,6 +11,44 @@ h3, .h3 {
 	text-transform: uppercase;
 }
 
+
+
+.iPhoneSize(@widthScreen: 200px, @heightScreen: round((@widthScreen * 1.84466019))) {
+	.iPhone {
+		width: @widthScreen;
+		height: @heightScreen;
+	}
+}
+// Default size iPhone
+.iPhoneSize();
+
+.iPhone {
+	background-image: url(../iPhone.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+	position: relative;
+	margin: 30px auto;
+	.screen {
+		background: #1f1e1f;
+		position: absolute;
+		top: 13.1%;
+		right: 14.5%;
+		bottom: 17%;
+		left: 13.1%;
+		overflow-y: auto;
+		overflow-x: hidden;
+    -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+    &::-webkit-scrollbar {
+    	display: none;
+    }
+		text-align: center;
+		img {
+			width: 100%;
+		}
+	}
+}
+
 .smartPhone {
 	width: 375px;
 	height: 667px;
