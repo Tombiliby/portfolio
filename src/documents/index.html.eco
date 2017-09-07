@@ -17,12 +17,13 @@ layout: "default"
 	<%- @readFile('sections/demo_section_1.html') %>
 
 	<div class="hidden">
-	App ios carrefour
-	App ios Heli air monaco (propal)
-	Process mobile first : Phone Tab Desktop
-	Theming
-	Process V2
-	Plate forme : BO, B2B, Yield...
+	X App ios carrefour
+	X App ios Heli air monaco (propal)
+	X Process mobile first : Phone Tab Desktop
+	// sketch.cloud
+	X Theming
+	X Process V2
+	X Plate forme : BO, B2B, Yield...
 	site Internet :
 		ventes privées
 		Last minute
@@ -30,7 +31,7 @@ layout: "default"
 		Thalassa
 		Groupon
 		Leclerc Voyages
-	Orchestra : Charte graphique
+	X Orchestra : Charte graphique
 	Glyph
 	Site internet web designer :
 		Thalassa
@@ -39,8 +40,11 @@ layout: "default"
 		Fnac voyage
 		Casino vacances
 		Verychic
-	APG (NDC)
+	X APG (NDC)
 	App leclerc
+	X Chatbot LM
+		https://xd.adobe.com/view/9d015460-ae62-4390-8155-76b52eed3387/
+	X catalog gen
 	</div>
 
 </div>
