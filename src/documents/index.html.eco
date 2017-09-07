@@ -15,6 +15,34 @@ layout: "default"
 	<%- @readFile('sections/demo_section_2.html') %>
 	<%- @readFile('sections/scn_carrefourApp.html') %>
 	<%- @readFile('sections/demo_section_1.html') %>
+
+	<div class="hidden">
+	App ios carrefour
+	App ios Heli air monaco (propal)
+	Process mobile first : Phone Tab Desktop
+	Theming
+	Process V2
+	Plate forme : BO, B2B, Yield...
+	site Internet :
+		ventes privées
+		Last minute
+		Auchan voyage
+		Thalassa
+		Groupon
+		Leclerc Voyages
+	Orchestra : Charte graphique
+	Glyph
+	Site internet web designer :
+		Thalassa
+		Vacanciel
+		Plaisir de partir (aeroport)
+		Fnac voyage
+		Casino vacances
+		Verychic
+	APG (NDC)
+	App leclerc
+	</div>
+
 </div>
 
 </div>
