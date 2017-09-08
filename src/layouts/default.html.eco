@@ -13,7 +13,17 @@
   </head>
   <body>
 
+    <div class="scn_header">
+      <div class="btn_mainMenu_toggle">
+        <span></span>
+      </div>
+    </div>
+
 		<%- @content %>
+
+    <div class="mainNavZone">
+      process
+    </div>
 
     <script src="js/lib.js"></script>
     <script src="js/app.js"></script>

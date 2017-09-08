@@ -1,0 +1,80 @@
+.scn_sideNavZone(@bg_link_hover_sideNav:@orx_color_grey_lighter) {
+	.scn_sideNavZone {
+		width: 260px;
+		margin-left: -260px;
+		height: 100%;
+		z-index: 99;
+		position: fixed;
+		top: 0;
+		background: @orx_color_white;
+		> .headerHeight {
+			height: 45px;
+		}
+		.sideNav {
+			height: 100%;
+			width:100%;
+			top: 0;
+			z-index: 10;
+			position: absolute;
+			top:0;
+			padding-top: 45px; // as heading
+			> .inner {
+				overflow-y:auto; 
+				height: 100%;
+			  overflow-y: scroll;
+			  -webkit-overflow-scrolling: touch;
+			}
+			.linkListZone {
+				.item .lbl {
+					border-bottom: 1px solid @orx_color_grey_light;
+				  display: block;
+				  padding: 10px 15px;
+				  text-decoration: none;
+				  &:hover {
+				  	background-color: @bg_link_hover_sideNav;
+				  	text-decoration: none;
+				  }
+				}
+			}
+		}
+		.transition(margin-left .1s ease-out);
+		// sidenav open
+		.main_nav_open & {
+			margin-left: 0;
+			.transition(margin-left .2s ease-in-out);
+		}
+	}
+}
+
+// Stop scrolling for the body 
+body.main_nav_open {
+  overflow: hidden;
+  /*
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  */
+}
+
+.scn_header {
+	position: fixed;
+	z-index: 9999;
+	.btn_mainMenu_toggle {
+		margin: 20px 0 0 30px;
+		#ico_nav .to_cross(@text-color, @text-color, 40px, 3px, 8px);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

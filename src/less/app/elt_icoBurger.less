@@ -1,0 +1,38 @@
+#ico_nav {
+	.to_cross(@color:#000, @colorActive:red, @width:35px, @weight:5px, @marge: 7px, @zIndex_icoNav: 100) {
+		& {
+			width: @width;
+			display:inline-block;
+			z-index: @zIndex_icoNav;
+			position: relative;
+		}
+		&:before, &:after, span {
+			content: "";
+			background: @color;
+			border-radius: @weight;
+			display: block;
+			height: @weight;
+			margin: @marge 0;
+			transition: all .2s ease-in-out;
+		}
+		// Side nav open
+		.main_nav_open &:before, .main_nav_open &:after, .main_nav_open & span {
+			background: @colorActive;
+		}
+		.main_nav_open &:before {
+		  transform: translateY(@weight + @marge) rotate(135deg);
+		  -moz-transform: translateY(@weight + @marge) rotate(135deg);
+		  -webkit-transform: translateY(@weight + @marge) rotate(135deg);
+		}
+		.main_nav_open &:after {
+		  transform: translateY(-(@weight + @marge)) rotate(-135deg);
+		  -moz-transform: translateY(-(@weight + @marge)) rotate(-135deg);
+		  -webkit-transform: translateY(-(@weight + @marge)) rotate(-135deg);
+		}
+		.main_nav_open & span {
+		  -moz-transform: scale(0);
+		  -webkit-transform: scale(0);
+		  transform: scale(0);
+		}
+	}
+}
