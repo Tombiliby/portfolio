@@ -25,21 +25,21 @@ layout: "default"
 	X Process V2
 	X Plate forme : BO, B2B, Yield...
 	site Internet :
-		ventes privées
-		Last minute
-		Auchan voyage
-		Thalassa
+		X ventes privées
+		X Last minute
+		X Auchan voyage
+		X Thalasseo
 		Groupon
 		Leclerc Voyages
 	X Orchestra : Charte graphique
 	Glyph
 	Site internet web designer :
-		Thalassa
-		Vacanciel
-		Plaisir de partir (aeroport)
+		- Thalassa
+		- Vacanciel
+		X Plaisir de partir (aeroport)
 		Fnac voyage
 		Casino vacances
-		Verychic
+	X	Verychic
 	X APG (NDC)
 	App leclerc
 	X Chatbot LM
