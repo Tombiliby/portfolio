@@ -106,7 +106,7 @@ $(function () {
 			$(".sectionZone").each(function() {
 				var bottomSection = $(this).height() + $(this).offset().top;
 
-				if($(window).scrollTop() > $(this).offset().top - ($(window).height()/1.5) && $(window).scrollTop() < bottomSection) {
+				if($(window).scrollTop() > $(this).offset().top - ($(window).height()/4) && $(window).scrollTop() < bottomSection) {
 					$("#bgColor").removeClass();
 					$("#bgColor").addClass($(this).attr("id"));
 					//$("#bgColor").css("background", $(this).data("bgcolor"));
