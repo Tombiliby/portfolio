@@ -60,11 +60,14 @@ h4, .h4 {
 }
 
 .side_summary {
-	background: #fff;
-	padding-left: 50px;
+	//color: #fff;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	.summaryZone {
-		position: absolute;
-		bottom: 0;
+		@media (min-width: @screen-md-min){
+			position: absolute;
+			bottom: 0;
+		}
 		margin-bottom: 30px;
 		padding-right: 15px; // fix padding 
 		padding-right: 100px;
@@ -85,7 +88,3 @@ h4, .h4 {
 
 }
 
-
-.scn_header {
-	position: fixed;
-}

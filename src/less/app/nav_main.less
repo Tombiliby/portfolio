@@ -49,19 +49,21 @@
 // Stop scrolling for the body 
 body.main_nav_open {
   overflow: hidden;
-  /*
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  */
 }
 
+
 .scn_header {
-	position: fixed;
-	z-index: 9999;
+	padding: 15px;
 	.btn_mainMenu_toggle {
-		margin: 20px 0 0 30px;
 		#ico_nav .to_cross(@text-color, @text-color, 40px, 3px, 8px);
+	}
+
+	@media (min-width: @screen-md-min) {
+		position: fixed;
+		z-index: 9999;
+		.btn_mainMenu_toggle {
+			margin: 20px 0 0 30px;
+		}
 	}
 }
 

@@ -25,7 +25,7 @@
 		//  stop sticky kit
 		//  based on your window width
 
-		var screen = 768;
+		var screen = 992;
 
 		var windowHeight, windowWidth;
 		windowWidth = $(window).width();
@@ -73,26 +73,61 @@
 				}
 		}, 250));
 
-		// resize desc tag for desc at bottom
-		$(".inner_fullHeight").each(function() {
-			$(this).height($(window).height());
+
+		/*********************************************
+			HEIGHT SECTION
+		*********************************************/
+		function resizeFullHeight(e) {
+			$(e).each(function() {
+				$(this).height($(window).height());
+			});
+		}
+		function resizeAutoHeight(e) {
+			$(e).each(function() {
+				$(this).height("auto");
+			});
+		}
+		resizeHeight(".inner_fullHeight");
+
+		$(window).scroll(function() {
+			resizeHeight(".inner_fullHeight");
 		});
 
-		// BG by section
-		$(window).scroll(function() {
-			$(".sectionZone").each(function() {
+		$(window).resize(function() {
+			resizeHeight(".inner_fullHeight");
+		});
+
+		function resizeHeight(e) {
+			if (($(window).width() < screen)) {
+					resizeAutoHeight(e)
+			} else {
+					resizeFullHeight(e)
+			}
+		}
+
+		/*********************************************
+			BACKGROUND ANIM
+		*********************************************/
+		function bgColor(section) {
+			$(section).each(function(){
 				var bottomSection = $(this).height() + $(this).offset().top;
 
 				if($(window).scrollTop() > $(this).offset().top - ($(window).height()/4) && $(window).scrollTop() < bottomSection) {
-					$("#bgColor").removeClass();
-					$("#bgColor").addClass($(this).attr("id"));
-					//$("#bgColor").css("background", $(this).data("bgcolor"));
+					$("body").removeClass();
+					$("body").addClass($(this).attr("id"));
 				}
-
 			});
+		}
+		bgColor(".sectionZone");
+
+		$(window).scroll(function() {
+			bgColor(".sectionZone");
 		});
 
-		// OWL
+
+		/*********************************************
+			CAROUSEL
+		*********************************************/
 		$(".owl-carousel").owlCarousel({
 			items: 2,
 			nav: true,
