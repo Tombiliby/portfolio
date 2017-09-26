@@ -1,5 +1,5 @@
 #ico_nav {
-	.to_cross(@color:#000, @colorActive:red, @width:35px, @weight:5px, @marge: 7px, @zIndex_icoNav: 100) {
+	.to_cross(@color1:#000, @color2:#000, @colorActive1:red, @colorActive2:red, @width:35px, @weight:5px, @marge: 7px, @zIndex_icoNav: 100) {
 		& {
 			width: @width;
 			display:inline-block;
@@ -8,7 +8,8 @@
 		}
 		&:before, &:after, span {
 			content: "";
-			background: @color;
+			background: @color1;
+			#gradient .horizontal(@color1, @color2);
 			border-radius: @weight;
 			display: block;
 			height: @weight;
@@ -17,7 +18,8 @@
 		}
 		// Side nav open
 		.main_nav_open &:before, .main_nav_open &:after, .main_nav_open & span {
-			background: @colorActive;
+			background: @colorActive1;
+			#gradient .horizontal(@colorActive1, @colorActive2);
 		}
 		.main_nav_open &:before {
 		  transform: translateY(@weight + @marge) rotate(135deg);
