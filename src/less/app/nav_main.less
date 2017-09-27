@@ -53,15 +53,18 @@ body.main_nav_open {
 
 .scn_header {
 	padding: 15px;
+	background: #fff;
 	.btn_mainMenu_toggle {
-		#ico_nav .to_cross(#2af598, #009efd, #2af598, #009efd, 40px, 3px, 8px);
+		//#ico_nav .to_cross(#2af598, #009efd, #2af598, #009efd, 40px, 3px, 8px);
+		#ico_nav .to_cross(#4e4e4e, #4e4e4e, #4e4e4e, #4e4e4e, 40px, 3px, 8px);
 	}
 
 	@media (min-width: @screen-md-min) {
+		background: none;
 		position: fixed;
 		z-index: 9999;
 		.btn_mainMenu_toggle {
-			margin: 20px 0 0 30px;
+			margin: 30px 0 0 35px;
 		}
 	}
 }
